@@ -61,7 +61,7 @@ ngOnInit(): void {
     const nuevoTelefono=this.formEstudiantes.get('Telefono')?.value;
     const nuevoEmail=this.formEstudiantes.get('Email')?.value;
 
-    this.estudiantesservice.updateEstudiante(IdEstudiantes,nuevoNombre)
+    this.estudiantesservice.updateEstudiante(IdEstudiantes,nuevoNombre,nuevoApellido,nuevoDNI,nuevoTelefono,nuevoEmail)
     .subscribe(
       respuesta => {
         console.log('Modificación Correcta',respuesta);

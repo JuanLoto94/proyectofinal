@@ -25,9 +25,19 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+          
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+          
+          
+            ]
           },
           "configurations": {
             "production": {
@@ -87,12 +97,25 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+          
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+          
+          
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "67d735c3-3e86-42eb-bad5-7921dd0fdc3e"
   }
 }

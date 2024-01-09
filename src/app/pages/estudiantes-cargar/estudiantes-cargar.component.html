@@ -1,0 +1,34 @@
+<h1>Crear Estudiantes</h1>
+<form>
+    <div class="form-group">
+        <label for="Nombre">Nombre</label>
+        <input class="form-control" [(ngModel)]="estudiantes.Nombre" type="text" name="" id="">
+    </div>
+
+    <div class="form-group">
+        <label for="Apellido">Apellido</label>
+        <input class="form-control" [(ngModel)]="estudiantes.Apellido" type="text" name="" id="">
+    </div>
+
+    <div class="form-group">
+        <label for="DNI">DNI</label>
+        <input class="form-control" [(ngModel)]="estudiantes.DNI" type="text" name="" id="">
+    </div>
+
+    <div class="form-group">
+        <label for="Telefono">Telefono</label>
+        <input class="form-control" [(ngModel)]="estudiantes.Telefono" type="text" name="" id="">
+    </div>
+
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input class="form-control" [(ngModel)]="estudiantes.Email" type="text" name="" id="">
+    </div>
+
+    <div>
+        <button (click)="crearEstudiantes()" class="btn btn-primary">Crear Estudiantes</button>
+        <button routerLink="/listarestudiantes" class="btn btn-danger">Cancelar</button>
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="submitForm()">Enviar</button>
+</form>

@@ -1,0 +1,25 @@
+<h1>Editar Estudiantes</h1>
+<form [formGroup]="formEstudiantes">
+    <div>
+        <input class="form-control" formControlName="Nombre" type="text" name="" id="">
+    </div>
+    <div>
+        <input class="form-control" formControlName="Apellido" type="text" name="" id="">
+    </div>
+    <div>
+        <input class="form-control" formControlName="DNI" type="text" name="" id="">
+    </div>
+    <div>
+        <input class="form-control" formControlName="Telefono" type="text" name="" id="">
+    </div>
+    <div>
+        <input class="form-control" formControlName="Email" type="text" name="" id="">
+    </div>
+    
+    <div>
+        <button (click)="actualizarEstudiantes()" class="btn btn-primary">Editar estudiantes</button>
+        <button routerLink="/listarestudiantes" class="btn btn-danger">Cancelar</button>
+    </div>
+
+
+</form>
